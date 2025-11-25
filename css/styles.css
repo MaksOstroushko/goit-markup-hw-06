@@ -66,6 +66,7 @@ img {
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -85,6 +86,7 @@ img {
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        text-align: start;
     }
 }
 
@@ -479,34 +481,79 @@ img {
 
 /* #region section 3 */
 
-/* .section-three {
-    background-color: #F4F4FD;
-}
-
 .section-three .container .section-title {
-    margin-bottom: 72px;
+    margin-bottom: 32px;
 }
 
 .section-three {
+    background-color: #F4F4FD;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 120px 0;
 }
 
-.section-three .container .section-list-container {
+@media screen and (max-width: 1157px) {
+    .section-three {
+        padding: 96px 0;
+    }
+}
+
+.section-three .section-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .section-three .section-list-container {
     display: flex;
     flex-direction: row;
     gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
 }
 
-.section-three .container .list-item-container {
+@media screen and (min-width: 1158px) {
+    .section-three .section-list-container {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+
+.section-three .list-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.section-three .section-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.section-three .list-item-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     flex-basis: calc((100% - 72px) / 4);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .section-three .list-item-container {
+        margin-top: 40px;
+    }
 }
 
 .list-text-container {
@@ -561,7 +608,7 @@ img {
 
 .social-icon-sprite {
     fill: #f4f4fd;
-} */
+}
 
 /* #endregion section 3 */
 
