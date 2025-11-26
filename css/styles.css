@@ -293,6 +293,8 @@ img {
     .address-list-container {
         flex-direction: column;
         align-items: center;
+        display: flex;
+        gap: 12px;
     }
 }
 
@@ -319,6 +321,15 @@ img {
 .address-container-item:hover, 
 .address-container-item:focus {
     color:#404BBF;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .address-container-item {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+    }
 }
 
 .burger-button {
