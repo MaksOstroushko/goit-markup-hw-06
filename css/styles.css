@@ -790,6 +790,16 @@ img {
     align-items: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .page-footer-container {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap;
+        padding-left: 108px;
+    }
+}
+
 @media screen and (min-width: 1158px) {
     .page-footer-container {
         display: flex;
@@ -823,6 +833,13 @@ img {
 
 .footer-socials-container {
     margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .footer-socials-container {
+        margin-left: 24px;
+        margin-bottom: 72px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
