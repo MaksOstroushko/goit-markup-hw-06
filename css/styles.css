@@ -1221,9 +1221,9 @@ img {
     left: 0;
     z-index: 999;
 
-    /* opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    pointer-events: none; */
+    pointer-events: none;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1404,6 +1404,22 @@ textarea::placeholder {
     color: #8e8f99;
 }
 
+@media screen and (max-width: 767px) {
+    .user-privacy-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .user-privacy-label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
 .user-privacy-span {
     display: inline-flex;
     align-items: center;
@@ -1450,6 +1466,14 @@ textarea::placeholder {
     text-align: center;
 
     display: block;
+}
+
+@media screen and (max-width: 767px) {
+    .privacy-link-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
 }
 
 /* #endregion form */
